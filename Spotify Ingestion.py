@@ -2,6 +2,7 @@ import requests
 import base64
 import dotenv
 import os
+import urllib.parse
 
 dotenv.load_dotenv()
 
@@ -47,8 +48,46 @@ def get_artist_data_raw(artist_string, token = None):
 
 
 ### get song specific metrics based on song search
-### get audio metadata based on song search
+
+def get_song_data_raw(track_string, token = None):
+    current_token = token
+    if track_string is None:
+        raise ValueError("artist_string is null. Please input artist string")
+    if current_token is None:
+        token = get_spotify_token()
+    track_headers = {'Authorization': 'Bearer ' + token}
+    track_response = requests.get('https://api.spotify.com/v1/tracks/{}'.format(track_string), headers= track_headers)
+    return track_response.json()
 
 
-print(get_artist_data_raw('0TnOYISbd1XYRBk9myaseg'))
+def get_audio_data_raw(track_string, token = None):
+    current_token = token
+    if track_string is None:
+        raise ValueError("artist_string is null. Please input artist string")
+    if current_token is None:
+        token = get_spotify_token()
+    track_headers = {'Authorization': 'Bearer ' + token}
+    track_response = requests.get('https://api.spotify.com/v1/audio-analysis/{}'.format(track_string), headers= track_headers)
+    return track_response.json()
 
+
+def search_for_artist(artist_search_string, token = None):
+    current_token = token
+    if artist_search_string is None:
+        raise ValueError("artist_search_string is null. Please input artist string")
+    if current_token is None:
+        token = get_spotify_token()
+    query_string = urllib.parse.urlencode(artist_search_string)
+    print(query_string)
+    type = "artist"
+    limit = "20"
+    artist_headers = {'Authorization': 'Bearer ' + token}
+    result = requests.get('https://api.spotify.com/v1/search?q={}&type={}&market=US&limit={}'.format(query_string, type, limit), headers= artist_headers)
+    return result.json()
+
+def search_for_song(song_search_string):
+    return None
+
+#print(get_artist_data_raw('0TnOYISbd1XYRBk9myaseg', token = "BQBeZg-yY3ofEQFl8BHhE_FD3CrOfqFtQ7RnXEAflje7U_njiul1c6tFUyo3_b5Wezwbcb288nEilVEIW2PFzQ-9BSy0hVpZwgCdSpLbc74MoABNdWq8Kcu82N1otQ86J87SbWCC6Jo"))
+#print(get_song_data_raw('11dFghVXANMlKmJXsNCbNl', token = "BQBeZg-yY3ofEQFl8BHhE_FD3CrOfqFtQ7RnXEAflje7U_njiul1c6tFUyo3_b5Wezwbcb288nEilVEIW2PFzQ-9BSy0hVpZwgCdSpLbc74MoABNdWq8Kcu82N1otQ86J87SbWCC6Jo"))
+print(search_for_artist("Protest the Hero", token = "BQBeZg-yY3ofEQFl8BHhE_FD3CrOfqFtQ7RnXEAflje7U_njiul1c6tFUyo3_b5Wezwbcb288nEilVEIW2PFzQ-9BSy0hVpZwgCdSpLbc74MoABNdWq8Kcu82N1otQ86J87SbWCC6Jo"))
