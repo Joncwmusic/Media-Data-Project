@@ -22,6 +22,4 @@ def check_is_emo(artist_name):
     else:
         return emo_result
 
-#### div class="results col-xs-12"
-
 print(check_is_emo("primus"))
