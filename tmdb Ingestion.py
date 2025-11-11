@@ -17,10 +17,24 @@ tmdb_key = os.getenv("TMDB_API_KEY")
 #     resp = requests.get(token_url, headers=tmdb_headers)
 #     return resp.text
 
-def get_actor_data(actor_name):
-    actor_url = "https://api.themoviedb.org/3/person/person_id?language=en-US"
+def search_actor_name(actor_name):
+    actor_name_query = urllib.parse.quote(actor_name)
+    api_url = "https://api.themoviedb.org/3/search/person?query={}&include_adult=false&language=en-US&page=1".format(actor_name_query)
+    tmdb_header = {'Authorization': 'Bearer ' + tmdb_token}
+    resp = requests.get(api_url, headers=tmdb_header)
+    return resp.json()
+
+
+def get_actor_data(actor_id = None, actor_name = "Morgan Freeman"):
+    if actor_id == None:
+        json_search_resp = search_actor_name(actor_name)
+        actor_id = json_search_resp["results"][0]["id"]
+        print(actor_id)
+    actor_url = "https://api.themoviedb.org/3/person/{}?language=en-US".format(actor_id)
     tmdb_headers = {'Authorization': 'Bearer ' + tmdb_token}
-    return None
+    actor_data_resp = requests.get(actor_url, headers= tmdb_headers)
+    print(actor_data_resp.text)
+    return actor_data_resp.json()
 
 def get_movie_data(movie_name):
     return None
@@ -47,4 +61,4 @@ def get_most_popular(type = "movie"):
         get_most_popular_tv_shows()
 
 
-print(get_request_token(tmdb_token))
+print(get_actor_data(actor_id=None, actor_name="Chris Pratt"))
