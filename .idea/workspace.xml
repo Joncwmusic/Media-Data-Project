@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="Creating New Media Data Project">
+    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="Added check_is_emo function">
+      <change afterPath="$PROJECT_DIR$/tmdb Ingestion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsThisBandEmo.py" beforeDir="false" afterPath="$PROJECT_DIR$/IsThisBandEmo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +36,14 @@
   "keyToString": {
     "Python.IsThisBandEmo.executor": "Run",
     "Python.Spotify Ingestion.executor": "Run",
+    "Python.tmdb Ingestion.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.IsThisBandEmo">
+  <component name="RunManager" selected="Python.tmdb Ingestion">
     <configuration name="IsThisBandEmo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MediaDataProject" />
       <option name="ENV_FILES" value="" />
@@ -109,8 +110,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tmdb Ingestion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MediaDataProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tmdb Ingestion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tmdb Ingestion" />
         <item itemvalue="Python.IsThisBandEmo" />
         <item itemvalue="Python.Spotify Ingestion" />
       </list>
@@ -164,7 +188,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761790529280</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Creating New Media Data Project">
+      <option name="closed" value="true" />
+      <created>1762460028372</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762460028373</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added check_is_emo function">
+      <option name="closed" value="true" />
+      <created>1762460060635</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762460060635</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +220,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating New Media Data Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating New Media Data Project" />
+    <MESSAGE value="Added check_is_emo function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added check_is_emo function" />
   </component>
 </project>
