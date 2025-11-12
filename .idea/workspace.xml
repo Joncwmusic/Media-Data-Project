@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="Added check_is_emo function" />
+    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="Added tmdb Ingestion">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762827157763</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added tmdb Ingestion">
+      <option name="closed" value="true" />
+      <created>1762827369016</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762827369016</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +244,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating New Media Data Project" />
     <MESSAGE value="Added check_is_emo function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added check_is_emo function" />
+    <MESSAGE value="Added tmdb Ingestion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tmdb Ingestion" />
   </component>
 </project>
