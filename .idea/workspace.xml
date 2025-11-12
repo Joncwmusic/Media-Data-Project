@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="Added tmdb Ingestion">
+    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="Added genius Ingestion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/genius Ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/genius Ingestion.py" afterDir="false" />
     </list>
@@ -244,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762960177029</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added genius Ingestion">
+      <option name="closed" value="true" />
+      <created>1762961060556</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762961060556</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,6 +270,7 @@
     <MESSAGE value="Creating New Media Data Project" />
     <MESSAGE value="Added check_is_emo function" />
     <MESSAGE value="Added tmdb Ingestion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tmdb Ingestion" />
+    <MESSAGE value="Added genius Ingestion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added genius Ingestion" />
   </component>
 </project>

@@ -18,6 +18,7 @@ def get_artist_id_from_search(artist_name):
     return None
 
 def get_song_id(song_name):
+    return None
 
 def get_song_analysis(song_id):
     return None
