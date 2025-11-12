@@ -21,7 +21,7 @@ def get_genius_lyrics(song_id):
     return None
 
 
-def get_song_analysis(song_id)
+def get_song_analysis(song_id):
     return None
 
 
