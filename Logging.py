@@ -19,6 +19,10 @@ class Logger:
         ### Upload to text file or db or both
         if type == "text":
             return None
+        if type == "sqlite db":
+            return None
+        if type == "bq":
+            return None
         return None
 
 
