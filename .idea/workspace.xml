@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="Added skeleton out streamlit dash">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotify Ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/spotifyIngestion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genius Ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/geniusIngestion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmdb Ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/tmdbIngestion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763671801595</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added skeleton out streamlit dash">
+      <option name="closed" value="true" />
+      <created>1763829294028</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1763829294028</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
