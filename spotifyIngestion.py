@@ -28,8 +28,11 @@ def get_spotify_token():
     print("Access token:", token)
     return token
 
-def get_top_artist_data_curated():
-    return None
+def get_top_artist_tracks(artist_id, token = None):
+    artist_headers = {'Authorization': 'Bearer ' + token}
+    artist_track_url = "https://api.spotify.com/v1/artists/{}/top-tracks".format(artist_id)
+    resp = requests.get(artist_track_url, headers=artist_headers)
+    return resp.json()
 
 ### get top tracks from the big playlist
 def get_top_song_data_curated():
@@ -103,5 +106,5 @@ def search_for_song(song_search_string, token = None):
 
 #print(get_artist_data_raw('0TnOYISbd1XYRBk9myaseg', token = "BQBeZg-yY3ofEQFl8BHhE_FD3CrOfqFtQ7RnXEAflje7U_njiul1c6tFUyo3_b5Wezwbcb288nEilVEIW2PFzQ-9BSy0hVpZwgCdSpLbc74MoABNdWq8Kcu82N1otQ86J87SbWCC6Jo"))
 #print(get_song_data_raw('11dFghVXANMlKmJXsNCbNl', token = "BQBeZg-yY3ofEQFl8BHhE_FD3CrOfqFtQ7RnXEAflje7U_njiul1c6tFUyo3_b5Wezwbcb288nEilVEIW2PFzQ-9BSy0hVpZwgCdSpLbc74MoABNdWq8Kcu82N1otQ86J87SbWCC6Jo"))
-token = get_spotify_token()
-print(search_for_song("Sequoia Throne", token = token))
+# token = get_spotify_token()
+# print(search_for_song("Sequoia Throne", token = token))
