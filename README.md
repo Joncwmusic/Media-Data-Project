@@ -22,3 +22,8 @@ So Far, I've done the following:
 - I'd like to consider trending/top artists/top actor data from another data source
 - Storage will become a factor soon and transforming everything into something structured would be cool
 - Canva API for a newsletter format? Sounds like an idea for how to use whatever data I gather.
+
+## What it looks like so far:
+
+<img width="949" height="661" alt="image" src="https://github.com/user-attachments/assets/66512d60-9efa-492c-b243-c656be978fa6" />
+
