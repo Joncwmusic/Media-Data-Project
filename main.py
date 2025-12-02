@@ -30,9 +30,9 @@ if __name__ == '__main__':
 
             artist_dict = {}
 
-            try:
-                #### artist metrics from spotify API
-                for item in artist_json["artists"]["items"]:
+            #### artist metrics from spotify API
+            for item in artist_json["artists"]["items"]:
+                try:
                     artist_id = item["id"]
                     total_followers = item["followers"]["total"]
                     genre_list = item["genres"]
@@ -42,9 +42,10 @@ if __name__ == '__main__':
                     artist_popularity_score = item["popularity"]
                     artist_list = [artist_id, total_followers, genre_list, artist_name, artist_image_url, artist_thumbnail_url, artist_popularity_score]
                     artist_dict[artist_name] = artist_list
-            except:
-                st.text("Error Collecting Artist Data")
-                st.json(artist_json["artists"]["items"])
+                except:
+                    st.text("Error Collecting Artist Data")
+                    st.text(item["name"])
+                    st.json(item)
 
             # st.dataframe(artist_dict)
 
