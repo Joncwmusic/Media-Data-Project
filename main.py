@@ -23,10 +23,10 @@ if __name__ == '__main__':
         if artist_search_string:
             spotify_token = spotifyIn.get_spotify_token()
             artist_json = spotifyIn.search_for_artist(artist_search_string, token=spotify_token)
-            artist_genius_json = geniusIn.get_artist_id_from_search()
+            # artist_genius_json = geniusIn.get_artist_id_from_search()
             artist_dict = {}
 
-            for item in artist_genius_json["response"][]:
+            # for item in artist_genius_json["response"][]:
 
 
             # Artist metrics from spotify API
