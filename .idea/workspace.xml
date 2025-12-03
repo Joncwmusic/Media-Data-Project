@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="Fixed bug showing no results on error within data collection loop">
+    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="comment out bad lines to be adjusted later">
+      <change afterPath="$PROJECT_DIR$/buildapp/buildMovieActorData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildapp/buildMusicArtistData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsThisBandEmo.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/IsThisBandEmo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geniusIngestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/geniusIngestion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spotifyIngestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/spotifyIngestion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmdbIngestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/tmdbIngestion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +45,9 @@
   "keyToString": {
     "Python.IsThisBandEmo.executor": "Run",
     "Python.Spotify Ingestion.executor": "Debug",
+    "Python.buildMusicArtistData.executor": "Run",
     "Python.genius Ingestion.executor": "Run",
+    "Python.geniusIngestion (1).executor": "Run",
     "Python.tmdb Ingestion.executor": "Run",
     "Python.tmdbIngestion (1).executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -48,7 +56,13 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.tmdbIngestion (1)">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\buildapp" />
+      <recent name="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\ingestion" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.buildMusicArtistData">
     <configuration name="IsThisBandEmo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MediaDataProject" />
       <option name="ENV_FILES" value="" />
@@ -62,7 +76,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IsThisBandEmo.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\ingestion\IsThisBandEmo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="buildMusicArtistData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MediaDataProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/buildapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/buildapp/buildMusicArtistData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +120,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\geniusIngestion.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\ingestion\geniusIngestion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="geniusIngestion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MediaDataProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\ingestion\geniusIngestion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,50 +173,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="spotifyIngestion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MediaDataProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\spotifyIngestion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tmdbIngestion (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MediaDataProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tmdbIngestion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="tmdbIngestion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MediaDataProject" />
       <option name="ENV_FILES" value="" />
@@ -172,7 +186,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\tmdbIngestion.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\ingestion\tmdbIngestion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.buildMusicArtistData" />
+        <item itemvalue="Python.geniusIngestion (1)" />
         <item itemvalue="Python.tmdbIngestion (1)" />
         <item itemvalue="Python.IsThisBandEmo" />
         <item itemvalue="Python.geniusIngestion" />
-        <item itemvalue="Python.tmdbIngestion" />
-        <item itemvalue="Python.spotifyIngestion" />
       </list>
     </recent_temporary>
   </component>
@@ -391,7 +405,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764705806663</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Fixed bug showing no results on error within data collection loop">
+      <option name="closed" value="true" />
+      <created>1764737934035</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1764737934035</updated>
+    </task>
+    <task id="LOCAL-00025" summary="comment out bad lines to be adjusted later">
+      <option name="closed" value="true" />
+      <created>1764738033280</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1764738033280</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -419,6 +449,7 @@
     <MESSAGE value="Search function added with artist results and buttons for more data. Buttons don't do anything productive" />
     <MESSAGE value="Search function added with song results" />
     <MESSAGE value="Fixed bug showing no results on error within data collection loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug showing no results on error within data collection loop" />
+    <MESSAGE value="comment out bad lines to be adjusted later" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment out bad lines to be adjusted later" />
   </component>
 </project>

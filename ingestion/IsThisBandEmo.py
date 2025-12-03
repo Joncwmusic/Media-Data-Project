@@ -22,4 +22,4 @@ def check_is_emo(artist_name):
     else:
         return emo_result
 
-print(check_is_emo("My Chemical Romance"))
+# print(check_is_emo("My Chemical Romance"))
