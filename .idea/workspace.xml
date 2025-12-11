@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="refactoring to simplify main and make build more modular">
-      <change afterPath="$PROJECT_DIR$/ingestion/lastfmIngestion.py" afterDir="false" />
+    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="Adding lastfm ingestion function">
+      <change afterPath="$PROJECT_DIR$/ingestion/MostStreamedArtistList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +42,7 @@
     &quot;Python.buildMusicArtistData.executor&quot;: &quot;Run&quot;,
     &quot;Python.genius Ingestion.executor&quot;: &quot;Run&quot;,
     &quot;Python.geniusIngestion (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.lastfmIngestion.executor&quot;: &quot;Run&quot;,
     &quot;Python.tmdb Ingestion.executor&quot;: &quot;Run&quot;,
     &quot;Python.tmdbIngestion (1).executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -56,7 +57,7 @@
       <recent name="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\ingestion" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.buildMusicArtistData">
+  <component name="RunManager" selected="Python.lastfmIngestion">
     <configuration name="IsThisBandEmo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MediaDataProject" />
       <option name="ENV_FILES" value="" />
@@ -145,6 +146,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lastfmIngestion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MediaDataProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ingestion" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ingestion/lastfmIngestion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="MediaDataProject" />
       <option name="ENV_FILES" value="" />
@@ -191,6 +214,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lastfmIngestion" />
         <item itemvalue="Python.buildMusicArtistData" />
         <item itemvalue="Python.IsThisBandEmo" />
         <item itemvalue="Python.geniusIngestion" />
@@ -421,7 +445,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764790233498</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Adding lastfm ingestion function">
+      <option name="closed" value="true" />
+      <created>1765433808010</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1765433808010</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -451,6 +483,7 @@
     <MESSAGE value="Fixed bug showing no results on error within data collection loop" />
     <MESSAGE value="comment out bad lines to be adjusted later" />
     <MESSAGE value="refactoring to simplify main and make build more modular" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring to simplify main and make build more modular" />
+    <MESSAGE value="Adding lastfm ingestion function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding lastfm ingestion function" />
   </component>
 </project>
