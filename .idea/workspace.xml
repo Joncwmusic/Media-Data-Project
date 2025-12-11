@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="comment out bad lines to be adjusted later">
-      <change afterPath="$PROJECT_DIR$/buildapp/buildMovieActorData.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buildapp/buildMusicArtistData.py" afterDir="false" />
+    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="refactoring to simplify main and make build more modular">
+      <change afterPath="$PROJECT_DIR$/ingestion/lastfmIngestion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsThisBandEmo.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/IsThisBandEmo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geniusIngestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/geniusIngestion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spotifyIngestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/spotifyIngestion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmdbIngestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/tmdbIngestion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.IsThisBandEmo.executor": "Run",
-    "Python.Spotify Ingestion.executor": "Debug",
-    "Python.buildMusicArtistData.executor": "Run",
-    "Python.genius Ingestion.executor": "Run",
-    "Python.geniusIngestion (1).executor": "Run",
-    "Python.tmdb Ingestion.executor": "Run",
-    "Python.tmdbIngestion (1).executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.IsThisBandEmo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Spotify Ingestion.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.buildMusicArtistData.executor&quot;: &quot;Run&quot;,
+    &quot;Python.genius Ingestion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.geniusIngestion (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.tmdb Ingestion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tmdbIngestion (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\buildapp" />
@@ -198,8 +192,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.buildMusicArtistData" />
-        <item itemvalue="Python.geniusIngestion (1)" />
-        <item itemvalue="Python.tmdbIngestion (1)" />
         <item itemvalue="Python.IsThisBandEmo" />
         <item itemvalue="Python.geniusIngestion" />
       </list>
@@ -421,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764738033280</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="refactoring to simplify main and make build more modular">
+      <option name="closed" value="true" />
+      <created>1764790233498</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1764790233498</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -450,6 +450,7 @@
     <MESSAGE value="Search function added with song results" />
     <MESSAGE value="Fixed bug showing no results on error within data collection loop" />
     <MESSAGE value="comment out bad lines to be adjusted later" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment out bad lines to be adjusted later" />
+    <MESSAGE value="refactoring to simplify main and make build more modular" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring to simplify main and make build more modular" />
   </component>
 </project>
