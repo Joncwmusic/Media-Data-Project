@@ -22,6 +22,7 @@ So Far, I've done the following:
 - I'd like to consider trending/top artists/top actor data from another data source
 - Storage will become a factor soon and transforming everything into something structured would be cool
 - Canva API for a newsletter format? Sounds like an idea for how to use whatever data I gather.
+- Tracking over time by importing everything into a sqlite db and getting changes in data since the only reliable source for historical data is songstats.
 
 ## What it looks like so far:
 
