@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="skeleton sqlite db for artist data collection">
+    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="add structure to create records from spotify calls. To be put into sqlite db later">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoadData/LoadMusicData.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoadData/LoadMusicData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ingestion/MostStreamedArtistList.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/MostStreamedArtistList.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -479,7 +478,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765742756247</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add structure to create records from spotify calls. To be put into sqlite db later">
+      <option name="closed" value="true" />
+      <created>1766085663426</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1766085663426</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -512,6 +519,7 @@
     <MESSAGE value="Adding lastfm ingestion function" />
     <MESSAGE value="added most streamed artist list. Pivot to collection over time." />
     <MESSAGE value="skeleton sqlite db for artist data collection" />
-    <option name="LAST_COMMIT_MESSAGE" value="skeleton sqlite db for artist data collection" />
+    <MESSAGE value="add structure to create records from spotify calls. To be put into sqlite db later" />
+    <option name="LAST_COMMIT_MESSAGE" value="add structure to create records from spotify calls. To be put into sqlite db later" />
   </component>
 </project>
