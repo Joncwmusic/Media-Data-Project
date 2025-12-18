@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 from ingestion import spotifyIngestion
+import datetime as dt
 
 top_artist_url = "https://kworb.net/spotify/artists.html"
 
@@ -44,10 +45,9 @@ def create_pandas_record_mult(artist_id_list):
 
         print(artist_dict)
 
-        return pd.DataFrame(artist_dict)
+    return pd.DataFrame(artist_dict)
         #compile data into dictionary to convert to pandas df
 
-    artist_json_resp = artist_response.json()
 # Use that to call the endpoint (use multiple artist api call)
 
 
