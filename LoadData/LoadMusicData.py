@@ -15,8 +15,8 @@ data = {
 df = pd.DataFrame(data)
 
 # SQLite database file
-db_file = "local_db.sqlite"
-table_name = "people"
+db_file = "artist_metric_history.sqlite"
+table_name = "Artists_Metrics_Daily"
 
 # Connect to SQLite (creates file if it doesn't exist)
 conn = sqlite3.connect(db_file)
@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS {table_name} (
     age INTEGER
 )
 """
+
 cursor.execute(create_table_query)
 conn.commit()
 
