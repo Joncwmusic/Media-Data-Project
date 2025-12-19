@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="add structure to create records from spotify calls. To be put into sqlite db later">
+    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="json info to pandas df for artist info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ingestion/MostStreamedArtistList.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/MostStreamedArtistList.py" afterDir="false" />
     </list>
@@ -35,22 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.IsThisBandEmo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Spotify Ingestion.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.buildMusicArtistData.executor&quot;: &quot;Run&quot;,
-    &quot;Python.genius Ingestion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.geniusIngestion (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.lastfmIngestion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tmdb Ingestion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tmdbIngestion (1).executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.IsThisBandEmo.executor": "Run",
+    "Python.MostStreamedArtistList.executor": "Run",
+    "Python.Spotify Ingestion.executor": "Debug",
+    "Python.buildMusicArtistData.executor": "Run",
+    "Python.genius Ingestion.executor": "Run",
+    "Python.geniusIngestion (1).executor": "Run",
+    "Python.lastfmIngestion.executor": "Run",
+    "Python.tmdb Ingestion.executor": "Run",
+    "Python.tmdbIngestion (1).executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject" />
@@ -58,7 +59,7 @@
       <recent name="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\ingestion" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lastfmIngestion">
+  <component name="RunManager" selected="Python.MostStreamedArtistList">
     <configuration name="IsThisBandEmo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MediaDataProject" />
       <option name="ENV_FILES" value="" />
@@ -73,6 +74,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\ingestion\IsThisBandEmo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MostStreamedArtistList" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MediaDataProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ingestion" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ingestion/MostStreamedArtistList.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,30 +214,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tmdbIngestion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MediaDataProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject\ingestion\tmdbIngestion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MostStreamedArtistList" />
         <item itemvalue="Python.lastfmIngestion" />
         <item itemvalue="Python.buildMusicArtistData" />
         <item itemvalue="Python.IsThisBandEmo" />
@@ -486,7 +488,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766085663426</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="json info to pandas df for artist info">
+      <option name="closed" value="true" />
+      <created>1766087630830</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1766087630830</updated>
+    </task>
+    <task id="LOCAL-00033" summary="json info to pandas df for artist info">
+      <option name="closed" value="true" />
+      <created>1766088269549</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1766088269549</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -520,6 +538,7 @@
     <MESSAGE value="added most streamed artist list. Pivot to collection over time." />
     <MESSAGE value="skeleton sqlite db for artist data collection" />
     <MESSAGE value="add structure to create records from spotify calls. To be put into sqlite db later" />
-    <option name="LAST_COMMIT_MESSAGE" value="add structure to create records from spotify calls. To be put into sqlite db later" />
+    <MESSAGE value="json info to pandas df for artist info" />
+    <option name="LAST_COMMIT_MESSAGE" value="json info to pandas df for artist info" />
   </component>
 </project>

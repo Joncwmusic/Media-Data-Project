@@ -25,16 +25,18 @@ def create_pandas_record(artist_id):
 def create_pandas_record_mult(artist_id_list):
     token = spotifyIngestion.get_spotify_token()
     artist_headers = {'Authorization': 'Bearer ' + token}
-    artist_id_mult_string = artist_id_list.join("&")
-    artist_response = requests.get('https://api.spotify.com/v1/artists/{}'.format(artist_id_mult_string),
+    artist_id_mult_string = ",".join(artist_id_list)
+    artist_response = requests.get('https://api.spotify.com/v1/artists/?ids={}'.format(artist_id_mult_string),
                                    headers=artist_headers)
     ## extract json components in a dict
     artist_json = artist_response.json()
-    artist_dict = {"id":[], "Name":[], "Followers":[], "Popularity":[], "Genres":[], "Image_url":[]}
+    print(artist_json)
+    artist_dict = {"id":[], "Name":[], "Followers":[], "Popularity":[], "Genres":[], "Image_url":[], "Timestamp":[]}
 
     for artist in artist_json["artists"]:
+        print(artist)
         artist_dict["id"].append(artist["id"])
-        artist_dict["followers"].append(artist["followers"]["total"])
+        artist_dict["Followers"].append(artist["followers"]["total"])
         artist_dict["Genres"].append(artist["genres"])
         try:
             artist_dict["Image_url"].append(artist["images"][0]["url"])
@@ -42,6 +44,7 @@ def create_pandas_record_mult(artist_id_list):
             artist_dict["Image_url"].append(None)
         artist_dict["Name"].append(artist["name"])
         artist_dict["Popularity"].append(artist["popularity"])
+        artist_dict["Timestamp"].append(dt.datetime.now())
 
         print(artist_dict)
 
@@ -54,3 +57,11 @@ def create_pandas_record_mult(artist_id_list):
 # compile the data as follows:
 # artist_id, artist_name, followers, listeners, album array, genre array, popularity score
 # , image url, first_tracked and last_updated, is_active
+
+
+
+######## Testing
+skrillex_id = get_artist_id("skrillex")
+origami_angel_id = get_artist_id("Origami Angel")
+print([skrillex_id, origami_angel_id])
+print(create_pandas_record_mult([skrillex_id, origami_angel_id]))
