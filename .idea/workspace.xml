@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="json info to pandas df for artist info" />
+    <list default="true" id="d99694f1-4fa1-46ca-a423-af0055c4a02a" name="Changes" comment="json info to pandas df for artist info">
+      <change afterPath="$PROJECT_DIR$/LoadData/uploadToSQLite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,23 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.IsThisBandEmo.executor": "Run",
-    "Python.MostStreamedArtistList.executor": "Run",
-    "Python.Spotify Ingestion.executor": "Debug",
-    "Python.buildMusicArtistData.executor": "Run",
-    "Python.genius Ingestion.executor": "Run",
-    "Python.geniusIngestion (1).executor": "Run",
-    "Python.lastfmIngestion.executor": "Run",
-    "Python.tmdb Ingestion.executor": "Run",
-    "Python.tmdbIngestion (1).executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.IsThisBandEmo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MostStreamedArtistList.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Spotify Ingestion.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.buildMusicArtistData.executor&quot;: &quot;Run&quot;,
+    &quot;Python.genius Ingestion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.geniusIngestion (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.lastfmIngestion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tmdb Ingestion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tmdbIngestion (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jon Whelpley\PycharmProjects\MediaDataProject" />
@@ -509,7 +512,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766114442843</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="json info to pandas df for artist info">
+      <option name="closed" value="true" />
+      <created>1766435244146</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1766435244146</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
