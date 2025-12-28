@@ -28,3 +28,9 @@ So Far, I've done the following:
 
 <img width="949" height="661" alt="image" src="https://github.com/user-attachments/assets/66512d60-9efa-492c-b243-c656be978fa6" />
 
+
+## UPDATE
+
+So It seems I can't get too much that's meaningful without tracking some of these artists over time instead of getting historicals directly like songstats.
+So I'm going to cache some daily data for top artists instead. With the daily commits to a sqlite db that will probably be better than trying to make api calls from the UI directly anyway.
+More to come from this project I'm sure.
