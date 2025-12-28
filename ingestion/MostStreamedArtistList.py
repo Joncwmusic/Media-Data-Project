@@ -3,15 +3,53 @@ import requests
 import pandas as pd
 from ingestion import spotifyIngestion
 import datetime as dt
+import time
 
 top_artist_url = "https://kworb.net/spotify/artists.html"
 
+def get_top_artists():
+    url = "https://kworb.net/spotify/artists.html"
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    table = soup.find('table')
+
+    data = []
+
+    # 2. Extract headers (th)
+    headers = [header.text.strip() for header in table.find_all('th')]
+
+    # 3. Extract rows (tr)
+    for row in table.find_all('tr')[1:]:  # Skip the header row
+        cells = row.find_all('td')
+        artist_name = cells[0].text.strip()
+        data.append(artist_name)
+
+    print(data)
+    return data
+
+def list_to_txtfile(list, file_path):
+    # file_path = "../data/artist_list.txt"
+    with open(file_path, mode="w") as file:
+        file.write("\n".join(list) + "\n")
+    return None
 
 def get_artist_id(artist_name):
     artist_json = spotifyIngestion.search_for_artist(artist_name)
     return artist_json["artists"]["items"][0]["id"]
 # for each artist call the spotify search endpoint
 # get the top result for an ID
+
+
+def get_all_artist_ids():
+    filename = '../data/artist_list.txt'
+    id_list = []
+    with open(filename, 'r') as f:
+        for line in f:
+            id_list.append(get_artist_id(line))
+            time.sleep(1.0)
+    list_to_txtfile(id_list, "../data/id_list.txt")
+    return None
+
 
 def create_pandas_record(artist_id):
     token = spotifyIngestion.get_spotify_token()
