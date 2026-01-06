@@ -4,8 +4,8 @@
 
 ## What am I doing?
 
-I am currently compiling data getting some practice sorting some data directly from APIs. Spotify, tmdb, genius, 
-have free APIs with some rate limits and I figure it'd be cool to compile what I can get from each of these data sources and then some.
+Before I wanted to just get a little practice compiling data from various APIs to make sure I can effectively build out data pipelines as an analyst trying to expand their breadth of data knowledge. Now, I beleive it'd be cool to create a clone of songstats and start storing a daily upload of data from a defined list of ~3000 artists with a feature to add specfic artists. Maybe in the future, I can add actor popularity but in the mean time I'm keeping the focus to music.
+
 
 ## What Have I done so far?
 
@@ -15,6 +15,7 @@ So Far, I've done the following:
 - Started getting tmdb ingestion functions working
 - Added an "is this band emo" function for fun
 - Working through Genius Ingestion
+- I have some scripts to make more specific API calls to translate into a historical record of popularity.
 
 ## What do I want to add?
 
