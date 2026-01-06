@@ -34,9 +34,6 @@ def get_top_artist_tracks(artist_id, token = None):
     resp = requests.get(artist_track_url, headers=artist_headers)
     return resp.json()
 
-### get top tracks from the big playlist
-def get_top_song_data_curated():
-    return None
 
 ### get artist specific metrics based on artist search
 def get_artist_data_raw(artist_string, token = None):
